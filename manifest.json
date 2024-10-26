@@ -1,0 +1,17 @@
+{
+    "name": "Older YouTube Comments First",
+    "version": "0.0.0",
+    "manifest_version": 3,
+    "host_permissions": ["https://*.youtube.com/*"],
+    "permissions": ["storage"],
+    "background": {
+        "service_worker": "background.js"
+      },
+    "description" : "gooning",
+    "content_scripts" : [
+       {
+        "matches": ["https://*.youtube.com/*"],
+        "js" : ["contentScript.js"]
+       }
+    ]
+}
